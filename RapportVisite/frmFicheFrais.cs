@@ -62,16 +62,18 @@ namespace RapportVisite
         {
 
             justificatif = Convert.ToInt32(textBox_NbJustificatif.Text);
-            justificatif = int.Parse(textBox_NbJustificatif.Text);
+            //justificatif = int.Parse(textBox_NbJustificatif.Text);
 
             //recap NBJUSTIFICATIF
             textBox_recap_nbJustificatif.Text = Convert.ToString(justificatif);
+
+            //textBox_recap_nbJustificatif.Text = (textBox_NbJustificatif.Text);
         }
 
         private void textBox_MontantValide_TextChanged_1(object sender, EventArgs e)
         {
             montantValide = Convert.ToInt32(textBox_MontantValide.Text);
-            montantValide = int.Parse(textBox_MontantValide.Text);
+            //montantValide = int.Parse(textBox_MontantValide.Text);
 
             //recap MONTANT VALIDE
             textBox_recap_montantValide.Text = Convert.ToString(montantValide);
@@ -106,10 +108,10 @@ namespace RapportVisite
         private void button1_Click_1(object sender, EventArgs e)
         {
             justificatif = Convert.ToInt32(textBox_NbJustificatif.Text);
-            justificatif = int.Parse(textBox_NbJustificatif.Text);
+            //justificatif = int.Parse(textBox_NbJustificatif.Text);
 
-            montantValide = Convert.ToInt32(textBox_MontantValide.Text);
-            montantValide = int.Parse(textBox_MontantValide.Text);
+           montantValide = Convert.ToInt32(textBox_MontantValide.Text);
+            //montantValide = int.Parse(textBox_MontantValide.Text);
 
             uneNewFicheFrais = new fichefrais();
 
@@ -132,9 +134,11 @@ namespace RapportVisite
                 MessageBox.Show(ex.Message);
             }
 
+
+
         }
         #endregion
-
+        
         #region QUITTER
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
