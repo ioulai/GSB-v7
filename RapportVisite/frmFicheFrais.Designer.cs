@@ -71,6 +71,50 @@
             label2.TabIndex = 45;
             label2.Text = "Mois";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = System.Drawing.Color.Transparent;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label3.Location = new System.Drawing.Point(168, 101);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(88, 13);
+            label3.TabIndex = 53;
+            label3.Text = "Nb justificatifs";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = System.Drawing.Color.Transparent;
+            label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label7.Location = new System.Drawing.Point(516, 101);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(30, 13);
+            label7.TabIndex = 54;
+            label7.Text = "Etat";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = System.Drawing.Color.Transparent;
+            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label5.Location = new System.Drawing.Point(328, 101);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(91, 13);
+            label5.TabIndex = 55;
+            label5.Text = "Montant validé";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = System.Drawing.Color.Transparent;
+            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label6.Location = new System.Drawing.Point(563, 41);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(34, 13);
+            label6.TabIndex = 56;
+            label6.Text = "Date";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Black;
@@ -105,18 +149,18 @@
             // 
             this.cbMois.FormattingEnabled = true;
             this.cbMois.Items.AddRange(new object[] {
-            "Janvier",
-            "Fevrier",
+            "Janv",
+            "Fev",
             "Mars",
-            "Avril",
+            "Avr",
             "Mai",
-            "Juin",
-            "Juillet",
+            "Ju",
+            "Juill",
             "Aout",
-            "Septembre",
-            "Octobre",
-            "Novembre",
-            "Decembre"});
+            "Sept",
+            "Oct",
+            "Nov",
+            "Dec"});
             this.cbMois.Location = new System.Drawing.Point(17, 118);
             this.cbMois.Name = "cbMois";
             this.cbMois.Size = new System.Drawing.Size(114, 21);
@@ -248,50 +292,6 @@
             this.lbl_prenom.Size = new System.Drawing.Size(42, 13);
             this.lbl_prenom.TabIndex = 51;
             this.lbl_prenom.Text = "prenom";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = System.Drawing.Color.Transparent;
-            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label3.Location = new System.Drawing.Point(168, 101);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(88, 13);
-            label3.TabIndex = 53;
-            label3.Text = "Nb justificatifs";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = System.Drawing.Color.Transparent;
-            label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label7.Location = new System.Drawing.Point(516, 101);
-            label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(30, 13);
-            label7.TabIndex = 54;
-            label7.Text = "Etat";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = System.Drawing.Color.Transparent;
-            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label5.Location = new System.Drawing.Point(328, 101);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(91, 13);
-            label5.TabIndex = 55;
-            label5.Text = "Montant validé";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = System.Drawing.Color.Transparent;
-            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label6.Location = new System.Drawing.Point(563, 41);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(34, 13);
-            label6.TabIndex = 56;
-            label6.Text = "Date";
             // 
             // frmFicheFrais
             // 

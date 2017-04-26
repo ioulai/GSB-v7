@@ -40,13 +40,12 @@
             this.visualiserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MS_Frais = new System.Windows.Forms.ToolStripMenuItem();
             this.ficheFraisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fraisForfaitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifierFraisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgv_util = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pb_logo = new System.Windows.Forms.PictureBox();
             this.lb_titre = new System.Windows.Forms.Label();
             this.lb_iformation = new System.Windows.Forms.Label();
-            this.modifierFraisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_util)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
@@ -141,7 +140,6 @@
             // 
             this.MS_Frais.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ficheFraisToolStripMenuItem,
-            this.fraisForfaitToolStripMenuItem,
             this.modifierFraisToolStripMenuItem});
             this.MS_Frais.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.MS_Frais.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -153,15 +151,15 @@
             // 
             this.ficheFraisToolStripMenuItem.Name = "ficheFraisToolStripMenuItem";
             this.ficheFraisToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.ficheFraisToolStripMenuItem.Text = "Fiche frais";
+            this.ficheFraisToolStripMenuItem.Text = "Saisie frais";
             this.ficheFraisToolStripMenuItem.Click += new System.EventHandler(this.ficheFraisToolStripMenuItem_Click);
             // 
-            // fraisForfaitToolStripMenuItem
+            // modifierFraisToolStripMenuItem
             // 
-            this.fraisForfaitToolStripMenuItem.Name = "fraisForfaitToolStripMenuItem";
-            this.fraisForfaitToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.fraisForfaitToolStripMenuItem.Text = "Frais forfait";
-            this.fraisForfaitToolStripMenuItem.Click += new System.EventHandler(this.fraisForfaitToolStripMenuItem_Click);
+            this.modifierFraisToolStripMenuItem.Name = "modifierFraisToolStripMenuItem";
+            this.modifierFraisToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.modifierFraisToolStripMenuItem.Text = "Modifier frais";
+            this.modifierFraisToolStripMenuItem.Click += new System.EventHandler(this.modifierFraisToolStripMenuItem_Click);
             // 
             // dgv_util
             // 
@@ -212,13 +210,6 @@
             this.lb_iformation.TabIndex = 21;
             this.lb_iformation.Text = "INFORMATION";
             // 
-            // modifierFraisToolStripMenuItem
-            // 
-            this.modifierFraisToolStripMenuItem.Name = "modifierFraisToolStripMenuItem";
-            this.modifierFraisToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.modifierFraisToolStripMenuItem.Text = "Modifier frais";
-            this.modifierFraisToolStripMenuItem.Click += new System.EventHandler(this.modifierFraisToolStripMenuItem_Click);
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -267,7 +258,6 @@
         private System.Windows.Forms.Label lb_titre;
         private System.Windows.Forms.Label lb_iformation;
         private System.Windows.Forms.ToolStripMenuItem ficheFraisToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fraisForfaitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifierFraisToolStripMenuItem;
     }
 }

@@ -1123,7 +1123,7 @@
     </Options>
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
-      <Diagram Name="GSB_EQ3" ZoomLevel="55">
+      <Diagram Name="GSB_EQ3" ZoomLevel="94">
         <EntityTypeShape EntityType="GSB2_EQ3Model.Etat" Width="1.5" PointX="12.125" PointY="5.25" Height="1.5956835937499996" IsExpanded="true" />
         <EntityTypeShape EntityType="GSB2_EQ3Model.FAMILLE" Width="1.5" PointX="6" PointY="19.5" Height="1.5956835937500031" IsExpanded="true" />
         <EntityTypeShape EntityType="GSB2_EQ3Model.fichefrais" Width="1.5" PointX="9.875" PointY="8.625" Height="2.9417936197916648" IsExpanded="true" />

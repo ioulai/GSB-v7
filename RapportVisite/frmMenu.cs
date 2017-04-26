@@ -22,7 +22,7 @@ namespace RapportVisite
             levisiteur = Levisiteur;
         }
 
-       
+        #region PARTIE DU RESTE DU GROUPE     
 
         private void MS_Déconnexion_Click(object sender, EventArgs e)
         {
@@ -142,31 +142,21 @@ namespace RapportVisite
             frmInscriptioncs fInscrire = new frmInscriptioncs(maConnexion, levisiteur);
             fInscrire.ShowDialog();
         }
-               
+        #endregion
 
-      /*  private void visualisationToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmVisualiserFrais fFrais = new frmVisualiserFrais(maConnexion, levisiteur);
-            fFrais.ShowDialog();
-        }*/
-
-        
+        #region PARTIE OULAI ISAAC
+        //instanciation vue saisie frais
         private void ficheFraisToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmFicheFrais fFicheFrais = new frmFicheFrais(maConnexion, levisiteur);
             fFicheFrais.ShowDialog();
         }
-
-        private void fraisForfaitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmLigneFraisForfais fsaisie = new frmLigneFraisForfais(maConnexion, levisiteur);
-            fsaisie.ShowDialog();
-        }
-
+        //instanciation vue midification frais
         private void modifierFraisToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmModifierFrais fModifier = new frmModifierFrais(maConnexion, levisiteur);
             fModifier.ShowDialog();
         }
+        #endregion
     }
 }

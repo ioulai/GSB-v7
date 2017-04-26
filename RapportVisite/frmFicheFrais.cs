@@ -17,7 +17,8 @@ namespace RapportVisite
         private Visiteur levisiteurConnecte;
         private Etat unEtat;
         private fichefrais uneNewFicheFrais;
-        private int montantValide, justificatif;
+        private int montantValide;
+        private int justificatif ;
         public frmFicheFrais(GSB_EQ3Entities MaConnexion, Visiteur Levisiteur)
         {
 
@@ -26,6 +27,7 @@ namespace RapportVisite
             levisiteurConnecte = Levisiteur;
         }
 
+        #region OUVERTURE DU FORMULAIRE
         private void frmFicheFrais_Load_1(object sender, EventArgs e)
         {
             // chargement de l'utilisateur courant 
@@ -34,6 +36,7 @@ namespace RapportVisite
           
             //id visiteur
             textBox_recap_idVisiteur.Text = levisiteurConnecte.idVisiteur;
+
             //date counrante
             textBox_Date.Text = Convert.ToString(DateTime.Today);
 
@@ -52,13 +55,16 @@ namespace RapportVisite
                 MessageBox.Show(ex.Message);
             }
         }
-               
+        #endregion
 
+        #region TEXTE BOX
         private void textBox_NbJustificatif_TextChanged_1(object sender, EventArgs e)
         {
+
             justificatif = Convert.ToInt32(textBox_NbJustificatif.Text);
             justificatif = int.Parse(textBox_NbJustificatif.Text);
 
+            //recap NBJUSTIFICATIF
             textBox_recap_nbJustificatif.Text = Convert.ToString(justificatif);
         }
 
@@ -67,28 +73,36 @@ namespace RapportVisite
             montantValide = Convert.ToInt32(textBox_MontantValide.Text);
             montantValide = int.Parse(textBox_MontantValide.Text);
 
+            //recap MONTANT VALIDE
             textBox_recap_montantValide.Text = Convert.ToString(montantValide);
         }
+        
 
-        private void cbEtat_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void textBox_Date_TextChanged_1(object sender, EventArgs e)
         {
-            //affectation à l'objet un Etat de l'enregistrement selectionner dans la zone de liste cbEtat
-            unEtat = (Etat)this.cbEtat.SelectedItem;
-            textBox_recap_idEtat.Text = Convert.ToString(unEtat.id);
+            //recap DATE
+            textBox_recap_date.Text = textBox_Date.Text;
         }
-                
+        #endregion
 
+        #region COMBO BOX
         private void cbMois_SelectedIndexChanged(object sender, EventArgs e)
         {
             //recap Mois
             textBox_recap_mois.Text = Convert.ToString(cbMois.SelectedItem);
         }
-
-        private void textBox_Date_TextChanged_1(object sender, EventArgs e)
+        private void cbEtat_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            textBox_recap_date.Text = textBox_Date.Text;
-        }
+            //affectation à l'objet un Etat de l'enregistrement selectionner dans la zone de liste cbEtat
+            unEtat = (Etat)this.cbEtat.SelectedItem;
 
+            //recap ID ETAT
+            textBox_recap_idEtat.Text = Convert.ToString(unEtat.id);
+        }
+        #endregion
+
+        #region INSERTION
+        //SUR CLICK ON INSERE DANS LA BASE DE DONNEES
         private void button1_Click_1(object sender, EventArgs e)
         {
             justificatif = Convert.ToInt32(textBox_NbJustificatif.Text);
@@ -119,14 +133,16 @@ namespace RapportVisite
             }
 
         }
+        #endregion
 
+        #region QUITTER
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        
-       
+        #endregion
+
 
     }
 }
