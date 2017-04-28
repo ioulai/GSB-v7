@@ -144,13 +144,14 @@
             this.label1.Size = new System.Drawing.Size(193, 13);
             this.label1.TabIndex = 31;
             this.label1.Text = "Vous etes connecté en  tant que";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cbMois
             // 
             this.cbMois.FormattingEnabled = true;
             this.cbMois.Items.AddRange(new object[] {
             "Janv",
-            "Fev",
+            "Fév",
             "Mars",
             "Avr",
             "Mai",
@@ -160,7 +161,7 @@
             "Sept",
             "Oct",
             "Nov",
-            "Dec"});
+            "Déc"});
             this.cbMois.Location = new System.Drawing.Point(17, 118);
             this.cbMois.Name = "cbMois";
             this.cbMois.Size = new System.Drawing.Size(114, 21);
@@ -276,20 +277,25 @@
             // 
             // lbl_nom
             // 
+            this.lbl_nom.AccessibleName = "";
             this.lbl_nom.AutoSize = true;
             this.lbl_nom.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nom.Location = new System.Drawing.Point(243, 38);
             this.lbl_nom.Name = "lbl_nom";
-            this.lbl_nom.Size = new System.Drawing.Size(0, 13);
+            this.lbl_nom.Size = new System.Drawing.Size(41, 18);
             this.lbl_nom.TabIndex = 50;
+            this.lbl_nom.Text = "nom";
+            this.lbl_nom.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbl_prenom
             // 
             this.lbl_prenom.AutoSize = true;
             this.lbl_prenom.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_prenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_prenom.Location = new System.Drawing.Point(321, 38);
             this.lbl_prenom.Name = "lbl_prenom";
-            this.lbl_prenom.Size = new System.Drawing.Size(42, 13);
+            this.lbl_prenom.Size = new System.Drawing.Size(65, 18);
             this.lbl_prenom.TabIndex = 51;
             this.lbl_prenom.Text = "prenom";
             // 
