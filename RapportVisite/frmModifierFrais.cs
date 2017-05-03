@@ -37,7 +37,9 @@ namespace RapportVisite
 
             afficheRecap();   
         }
+
        
+
         #region Au chargement du formulaire On affiche toutes les fiches de frais du visiteur connecté
         public void afficheRecap()
         {
@@ -113,16 +115,19 @@ namespace RapportVisite
             cbEtat_modif.Text = Convert.ToString(laFicheFrais.Cells[1].Value);
         }
         #endregion
-
-
-        // Méthode pour affecter les valeurs saisies aux champs de l'enregistrement avant son ajout ou sa mise à jour
+        private void cbEtat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            unEtat = (Etat)this.cbEtat_modif.SelectedItem;
+            idEtat = Convert.ToString(unEtat.id);
+        }
+        #region  Méthode pour affecter les valeurs saisies aux champs de l'enregistrement avant son ajout ou sa mise à jour
         public void Affecter()
         {
             justificatif = Convert.ToInt32(txtNbJustificatif_modif.Text);
-            justificatif = int.Parse(txtNbJustificatif_modif.Text);
+           // justificatif = int.Parse(txtNbJustificatif_modif.Text);
 
             montantValide = Convert.ToInt32(txtMontantValide_modif.Text);
-            montantValide = int.Parse(txtMontantValide_modif.Text);
+            //montantValide = int.Parse(txtMontantValide_modif.Text);
 
 
 
@@ -131,23 +136,22 @@ namespace RapportVisite
             ceFrais.mois = cbMois_modif.Text;
             ceFrais.montantValide = montantValide;
             ceFrais.nbJustificatifs = justificatif;
-            // ceFrais.Etat = idEtat;
-
+            ceFrais.Etat = maConnex
 
         }
+        #endregion
+
+       
 
         private void btn_Modifier_Click(object sender, EventArgs e)
         {
             this.maConnexion.SaveChanges();
+            Affecter();
         }
 
         
 
-        private void cbEtat_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            unEtat = (Etat)this.cbEtat_modif.SelectedItem;
-            idEtat = Convert.ToString( unEtat.id);
-        }
+        
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
