@@ -30,15 +30,14 @@ namespace RapportVisite
             ceIdVisiteur = levisiteurConnecte.idVisiteur;
         }
 
-       
+        #region Au chargement du formulaire, affectation du bindingSource et affichage de l'enregistrement en cours
         private void frmModifierFrais_Load(object sender, EventArgs e)
         {
-           // bsModifierFrais.DataSource = maConnexion.fichefrais;
-
+            bsModifierFrais.DataSource = maConnexion.fichefrais;
             afficheRecap();   
         }
 
-       
+        #endregion 
 
         #region Au chargement du formulaire On affiche toutes les fiches de frais du visiteur connecté
         public void afficheRecap()
@@ -80,7 +79,7 @@ namespace RapportVisite
         }
         #endregion
 
-        #region Sur clic sur une ligne des lignes de frais du dataGriedView
+        #region clic sur une ligne frais du dataGriedView
         private void dgv_modifier_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             // chargement de cbo Etat
@@ -136,7 +135,7 @@ namespace RapportVisite
             ceFrais.mois = cbMois_modif.Text;
             ceFrais.montantValide = montantValide;
             ceFrais.nbJustificatifs = justificatif;
-            ceFrais.Etat = maConnex
+           // ceFrais.Etat = maConnex
 
         }
         #endregion
@@ -147,6 +146,7 @@ namespace RapportVisite
         {
             this.maConnexion.SaveChanges();
             Affecter();
+            this.Refresh();
         }
 
         
