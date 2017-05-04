@@ -33,6 +33,9 @@ namespace RapportVisite
         #region Au chargement du formulaire, affectation du bindingSource et affichage de l'enregistrement en cours
         private void frmModifierFrais_Load(object sender, EventArgs e)
         {
+            // chargement de l'utilisateur courant 
+            lbl_nom.Text = levisiteurConnecte.nom;
+            lbl_prenom.Text = levisiteurConnecte.prenom;
             bsModifierFrais.DataSource = maConnexion.fichefrais;
             afficheRecap();   
         }

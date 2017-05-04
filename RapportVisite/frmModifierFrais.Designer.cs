@@ -43,16 +43,19 @@
             this.cbEtat_modif = new System.Windows.Forms.ComboBox();
             this.txtNbJustificatif_modif = new System.Windows.Forms.TextBox();
             this.panelDetail = new System.Windows.Forms.Panel();
-            this.txtNbJustificatifs = new System.Windows.Forms.TextBox();
-            this.txtMontantValide = new System.Windows.Forms.TextBox();
-            this.txtDate = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtDate = new System.Windows.Forms.TextBox();
+            this.txtMontantValide = new System.Windows.Forms.TextBox();
+            this.txtNbJustificatifs = new System.Windows.Forms.TextBox();
             this.lblMessage = new System.Windows.Forms.Label();
             this.lblTitre = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.lbl_prenom = new System.Windows.Forms.Label();
+            this.lbl_nom = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -212,44 +215,15 @@
             this.panelDetail.Size = new System.Drawing.Size(226, 156);
             this.panelDetail.TabIndex = 53;
             // 
-            // txtNbJustificatifs
+            // label8
             // 
-            this.txtNbJustificatifs.Location = new System.Drawing.Point(140, 41);
-            this.txtNbJustificatifs.Name = "txtNbJustificatifs";
-            this.txtNbJustificatifs.Size = new System.Drawing.Size(67, 20);
-            this.txtNbJustificatifs.TabIndex = 0;
-            // 
-            // txtMontantValide
-            // 
-            this.txtMontantValide.Location = new System.Drawing.Point(108, 77);
-            this.txtMontantValide.Name = "txtMontantValide";
-            this.txtMontantValide.Size = new System.Drawing.Size(99, 20);
-            this.txtMontantValide.TabIndex = 1;
-            // 
-            // txtDate
-            // 
-            this.txtDate.Location = new System.Drawing.Point(108, 119);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(99, 20);
-            this.txtDate.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Nb justificatifs fournis";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 84);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Montant validé";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(17, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(150, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Détail de la fiche de frais";
             // 
             // label7
             // 
@@ -260,15 +234,44 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Date ";
             // 
-            // label8
+            // label6
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 13);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Détail de la fiche de frais";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 84);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Montant validé";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Nb justificatifs fournis";
+            // 
+            // txtDate
+            // 
+            this.txtDate.Location = new System.Drawing.Point(108, 119);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(99, 20);
+            this.txtDate.TabIndex = 2;
+            // 
+            // txtMontantValide
+            // 
+            this.txtMontantValide.Location = new System.Drawing.Point(108, 77);
+            this.txtMontantValide.Name = "txtMontantValide";
+            this.txtMontantValide.Size = new System.Drawing.Size(99, 20);
+            this.txtMontantValide.TabIndex = 1;
+            // 
+            // txtNbJustificatifs
+            // 
+            this.txtNbJustificatifs.Location = new System.Drawing.Point(140, 41);
+            this.txtNbJustificatifs.Name = "txtNbJustificatifs";
+            this.txtNbJustificatifs.Size = new System.Drawing.Size(67, 20);
+            this.txtNbJustificatifs.TabIndex = 0;
             // 
             // lblMessage
             // 
@@ -304,12 +307,50 @@
             this.label9.TabIndex = 56;
             this.label9.Text = "Ci dessous modifier la ligne selectionnée";
             // 
+            // lbl_prenom
+            // 
+            this.lbl_prenom.AutoSize = true;
+            this.lbl_prenom.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_prenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_prenom.Location = new System.Drawing.Point(399, 35);
+            this.lbl_prenom.Name = "lbl_prenom";
+            this.lbl_prenom.Size = new System.Drawing.Size(65, 18);
+            this.lbl_prenom.TabIndex = 59;
+            this.lbl_prenom.Text = "prenom";
+            // 
+            // lbl_nom
+            // 
+            this.lbl_nom.AccessibleName = "";
+            this.lbl_nom.AutoSize = true;
+            this.lbl_nom.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nom.Location = new System.Drawing.Point(321, 35);
+            this.lbl_nom.Name = "lbl_nom";
+            this.lbl_nom.Size = new System.Drawing.Size(41, 18);
+            this.lbl_nom.TabIndex = 58;
+            this.lbl_nom.Text = "nom";
+            this.lbl_nom.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(92, 35);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(193, 13);
+            this.label10.TabIndex = 57;
+            this.label10.Text = "Vous etes connecté en  tant que";
+            // 
             // frmModifierFrais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::RapportVisite.Properties.Resources.blue_image_012;
             this.ClientSize = new System.Drawing.Size(780, 471);
+            this.Controls.Add(this.lbl_prenom);
+            this.Controls.Add(this.lbl_nom);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblTitre);
             this.Controls.Add(this.lblMessage);
@@ -364,5 +405,8 @@
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Label lblTitre;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl_prenom;
+        private System.Windows.Forms.Label lbl_nom;
+        private System.Windows.Forms.Label label10;
     }
 }
